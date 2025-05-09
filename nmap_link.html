@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>네이버 지도 길안내 연결</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+  <script>
+    setTimeout(function() {
+      window.location.href = "nmap://navigation?dlat=37.616254836&dlng=126.834602751&dname=&appname=com.example.myapp";
+    }, 2000); // 2초 후 자동 이동
+  </script>
+</head>
+<body>
+  <h1>네이버 지도 길안내 연결 중입니다...</h1>
+  <p>앱이 자동으로 열리지 않으면 아래 버튼을 눌러주세요.</p>
+  <button onclick="window.location.href='nmap://navigation?dlat=37.616254836&dlng=126.834602751&dname=&appname=com.example.myapp'">
+    네이버 지도 열기
+  </button>
+</body>
+</html>
